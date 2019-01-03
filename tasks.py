@@ -2,7 +2,7 @@ from invoke import task
 
 @task
 def _update_tags(c, version=''):
-  msg = "Added tag v%(version)s"
+  msg = "Added tag v{0}".format(version)
   print('')
   print('Adding Files to Stage...')
   print('')
@@ -10,11 +10,11 @@ def _update_tags(c, version=''):
   print('')
   print('Commiting Staged Files...')
   print('')
-  c.run("git commit -am %(msg)s ")
+  c.run("git commit -m \"Created Tag\"")
   print('')
   print('Creating Tag...')
   print('')
-  c.run("git tag -a v%(version)s -m %(msg)s")
+  c.run("git tag -a v{0} -m {0}".format(version,msg))
   print('')
   print('Pushing to Master...')
   print('')
