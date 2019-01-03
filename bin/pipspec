@@ -1,0 +1,11 @@
+#!/usr/bin/env python
+
+import os,sys
+lib = os.path.dirname(os.path.dirname(__file__))
+sys.path.append(lib)
+
+import pipspec
+
+
+if __name__ == "__main__":
+  pipspec.cli()

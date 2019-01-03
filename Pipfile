@@ -1,0 +1,35 @@
+[[soource]]
+	name= "pypi"
+	url= "https://pypi.org/simple"
+	verify_ssl= true
+
+[spec]
+	name= "project_name"
+	version= "0.0.1"
+	description= "This is a Description"
+	long_description= "README.md"
+	license= "mit"
+	authors= [
+		"John Doe <john.doe@example.com>"
+	]
+	maintainers= [
+		"John Doe <john.doe@example.com>"
+	]
+	homepage= "https://project_name.github.io/"
+	repository= "https://www.github.com/USERNAME/project_name"
+	issues= "https://www.github.com/USERNAME/project_name/issues"
+	documentation= "https://project_name.github.io/docs"
+	keywords= []
+	classifiers= []
+
+[packages]
+colorizer-py = "*"
+toml = "*"
+invoke = "*"
+towncrier = "*"
+click = "*"
+
+[dev-packages]
+
+[requires]
+	python_version= "3.7"
